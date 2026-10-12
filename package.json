@@ -1,0 +1,15 @@
+{
+  "name": "asl-website",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Modular prerendered ASL site including assay, logistics, refining, mineral buying and trading",
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "typecheck": "python3 -m compileall -q content templates scripts",
+    "lint": "python3 -m compileall -q content templates scripts",
+    "test": "python3 -m unittest discover -s tests -v",
+    "dev": "python3 scripts/build.py && python3 -m http.server 4173 --directory dist",
+    "preview": "python3 -m http.server 4173 --directory dist"
+  },
+  "engines": {"node": ">=18"}
+}

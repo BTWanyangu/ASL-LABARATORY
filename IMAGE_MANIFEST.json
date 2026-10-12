@@ -1,0 +1,191 @@
+[
+  {
+    "path": "/images/generated/home-hero.webp",
+    "alt": "Gold and precious-material still life at a laboratory bench",
+    "origin": "Original AI-generated conceptual editorial photograph",
+    "sourceOriginal": "wide_cinematic_shallow_depth_of_field_still_life.png",
+    "usage": [
+      "service illustration",
+      "editorial"
+    ],
+    "dimensions": [
+      1700,
+      708
+    ]
+  },
+  {
+    "path": "/images/generated/mineral-assay.webp",
+    "alt": "Gold-bearing rock with crystalline mineral specimens",
+    "origin": "Original AI-generated conceptual editorial photograph",
+    "sourceOriginal": "a_dramatic_high_end_macro_style_still_life_close.png",
+    "usage": [
+      "service illustration",
+      "editorial"
+    ],
+    "dimensions": [
+      1536,
+      1024
+    ]
+  },
+  {
+    "path": "/images/generated/gold-assay.webp",
+    "alt": "Gloved hand positioning a gold sample at a precision balance",
+    "origin": "Original AI-generated conceptual editorial photograph",
+    "sourceOriginal": "a_realistic_high_resolution_close_up_laboratory_s.png",
+    "usage": [
+      "service illustration",
+      "editorial"
+    ],
+    "dimensions": [
+      1536,
+      1024
+    ]
+  },
+  {
+    "path": "/images/generated/diamond-examination.webp",
+    "alt": "Two brilliant-cut diamonds on a velvet examination tray",
+    "origin": "Original AI-generated conceptual editorial photograph",
+    "sourceOriginal": "a_close_up_high_end_macro_jewelry_still_life_scen.png",
+    "usage": [
+      "service illustration",
+      "editorial"
+    ],
+    "dimensions": [
+      1536,
+      1024
+    ]
+  },
+  {
+    "path": "/images/generated/gemstone-examination.webp",
+    "alt": "Emerald, blue, red and violet gemstones on an inspection surface",
+    "origin": "Original AI-generated conceptual editorial photograph",
+    "sourceOriginal": "a_close_up_cinematic_still_life_scene_of_a_gem_in.png",
+    "usage": [
+      "service illustration",
+      "editorial"
+    ],
+    "dimensions": [
+      1700,
+      680
+    ]
+  },
+  {
+    "path": "/images/generated/about.webp",
+    "alt": "Laboratory microscope and samples under warm interior light",
+    "origin": "Original AI-generated conceptual editorial photograph",
+    "sourceOriginal": "a_realistic_high_resolution_close_up_laboratory_s.png",
+    "usage": [
+      "About page"
+    ],
+    "dimensions": [
+      1000,
+      1024
+    ]
+  },
+  {
+    "path": "/images/generated/sample-handling.webp",
+    "alt": "Sample containers and a curated mineral tray",
+    "origin": "Original AI-generated conceptual editorial photograph",
+    "sourceOriginal": "a_realistic_high_resolution_close_up_laboratory_s.png",
+    "usage": [
+      "Sample handling service"
+    ],
+    "dimensions": [
+      810,
+      830
+    ]
+  },
+  {
+    "path": "/images/generated/reporting.webp",
+    "alt": "Carefully arranged mineral specimen containers at a work bench",
+    "origin": "Original AI-generated conceptual editorial photograph",
+    "sourceOriginal": "a_realistic_high_resolution_close_up_laboratory_s.png",
+    "usage": [
+      "Reporting service"
+    ],
+    "dimensions": [
+      900,
+      880
+    ]
+  },
+  {
+    "path": "/images/generated/quality.webp",
+    "alt": "Close detail of a precisely held diamond",
+    "origin": "Original AI-generated conceptual editorial photograph",
+    "sourceOriginal": "a_close_up_high_end_macro_jewelry_still_life_scen.png",
+    "usage": [
+      "Quality page"
+    ],
+    "dimensions": [
+      800,
+      800
+    ]
+  },
+  {
+    "path": "/images/generated/contact.webp",
+    "alt": "Faceted colored gemstones and examination tools",
+    "origin": "Original AI-generated conceptual editorial photograph",
+    "sourceOriginal": "a_close_up_cinematic_still_life_scene_of_a_gem_in.png",
+    "usage": [
+      "Contact page"
+    ],
+    "dimensions": [
+      900,
+      793
+    ]
+  },
+  {
+    "path": "/images/generated/stone-detail.webp",
+    "alt": "Textured gold bearing mineral surface",
+    "origin": "Original AI-generated conceptual editorial photograph",
+    "sourceOriginal": "a_dramatic_high_end_macro_style_still_life_close.png",
+    "usage": [
+      "Knowledge article"
+    ],
+    "dimensions": [
+      900,
+      1000
+    ]
+  },
+  {
+    "path": "/images/generated/lab-detail.webp",
+    "alt": "Gold particles beside glassware on a laboratory bench",
+    "origin": "Original AI-generated conceptual editorial photograph",
+    "sourceOriginal": "a_realistic_high_resolution_close_up_laboratory_s.png",
+    "usage": [
+      "Process page"
+    ],
+    "dimensions": [
+      890,
+      1024
+    ]
+  },
+  {
+    "path": "/images/generated/refining.webp",
+    "alt": "Conceptual image of molten metal pouring into a mold beside refined ingots",
+    "origin": "Original AI-generated conceptual editorial photograph",
+    "sourceOriginal": "a_high_resolution_cinematic_industrial_foundry_pr.png",
+    "usage": [
+      "Refining service page",
+      "Service cards"
+    ],
+    "dimensions": [
+      1600,
+      900
+    ]
+  },
+  {
+    "path": "/images/generated/manufacturing.webp",
+    "alt": "Close detail of refined metal ingots and production equipment",
+    "origin": "Original AI-generated conceptual editorial crop from refining original",
+    "sourceOriginal": "a_high_resolution_cinematic_industrial_foundry_pr.png",
+    "usage": [
+      "Manufacturing service page",
+      "Service cards"
+    ],
+    "dimensions": [
+      1087,
+      900
+    ]
+  }
+]

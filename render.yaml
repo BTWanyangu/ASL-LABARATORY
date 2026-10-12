@@ -1,0 +1,104 @@
+services:
+  - type: web
+    name: aurum-standard-laboratories
+    runtime: static
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./dist
+    headers:
+      - path: /images/*
+        name: Cache-Control
+        value: public, max-age=86400
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+    routes:
+      - type: rewrite
+        source: /about
+        destination: /about/index.html
+      - type: rewrite
+        source: /services
+        destination: /services/index.html
+      - type: rewrite
+        source: /services/mineral-assay
+        destination: /services/mineral-assay/index.html
+      - type: rewrite
+        source: /services/gold-assay
+        destination: /services/gold-assay/index.html
+      - type: rewrite
+        source: /services/diamonds
+        destination: /services/diamonds/index.html
+      - type: rewrite
+        source: /services/gemstones
+        destination: /services/gemstones/index.html
+      - type: rewrite
+        source: /services/sample-handling
+        destination: /services/sample-handling/index.html
+      - type: rewrite
+        source: /services/reporting
+        destination: /services/reporting/index.html
+      - type: rewrite
+        source: /trade
+        destination: /trade/index.html
+      - type: rewrite
+        source: /services/transportation
+        destination: /services/transportation/index.html
+      - type: rewrite
+        source: /services/reception
+        destination: /services/reception/index.html
+      - type: rewrite
+        source: /services/assaying
+        destination: /services/assaying/index.html
+      - type: rewrite
+        source: /services/refining
+        destination: /services/refining/index.html
+      - type: rewrite
+        source: /services/manufacturing
+        destination: /services/manufacturing/index.html
+      - type: rewrite
+        source: /services/financing
+        destination: /services/financing/index.html
+      - type: rewrite
+        source: /services/storage
+        destination: /services/storage/index.html
+      - type: rewrite
+        source: /services/mineral-buying
+        destination: /services/mineral-buying/index.html
+      - type: rewrite
+        source: /services/mineral-trading
+        destination: /services/mineral-trading/index.html
+      - type: rewrite
+        source: /process
+        destination: /process/index.html
+      - type: rewrite
+        source: /quality
+        destination: /quality/index.html
+      - type: rewrite
+        source: /knowledge
+        destination: /knowledge/index.html
+      - type: rewrite
+        source: /knowledge/understanding-gold-assay
+        destination: /knowledge/understanding-gold-assay/index.html
+      - type: rewrite
+        source: /knowledge/why-mineral-sampling-matters
+        destination: /knowledge/why-mineral-sampling-matters/index.html
+      - type: rewrite
+        source: /knowledge/diamonds-and-gemstones-examination
+        destination: /knowledge/diamonds-and-gemstones-examination/index.html
+      - type: rewrite
+        source: /knowledge/reading-laboratory-reports
+        destination: /knowledge/reading-laboratory-reports/index.html
+      - type: rewrite
+        source: /resources
+        destination: /resources/index.html
+      - type: rewrite
+        source: /contact
+        destination: /contact/index.html
+      - type: rewrite
+        source: /privacy
+        destination: /privacy/index.html
+      - type: rewrite
+        source: /terms
+        destination: /terms/index.html
