@@ -68,8 +68,8 @@ resources=[
  ('Read measurements in context',['Percentages, parts per million, mass fractions and fineness describe different forms of measurement.','A result may be affected by sampling, specimen heterogeneity, preparation and method suitability.','Any reported limits, conditions and observations should be read together with the numeric findings.']),
  ('Understand the scope',['A laboratory observation does not automatically establish geological origin, market value or the contents of an untested shipment.','An assay report is not automatically an independent accreditation, guarantee, or regulatory certificate.','Ask the issuer to explain unclear terminology, method applicability or sample representativeness.'])])]
 def render_pdf(filename,title,summary,sections):
- doc=SimpleDocTemplate(str(out/filename),pagesize=(595,842),leftMargin=55,rightMargin=55,topMargin=58,bottomMargin=58,author='Aurum Standard Laboratories - educational reference',title=title)
- story=[Paragraph('AURUM STANDARD LABORATORIES',styles['DocSmallASL']),Paragraph(title,styles['DocTitleASL']),Paragraph(summary,styles['DocBodyASL']),Spacer(1,5)]
+ doc=SimpleDocTemplate(str(out/filename),pagesize=(595,842),leftMargin=55,rightMargin=55,topMargin=58,bottomMargin=58,author='Aurum Standard Analytical Laboratories - educational reference',title=title)
+ story=[Paragraph('AURUM STANDARD ANALYTICAL LABORATORIES',styles['DocSmallASL']),Paragraph(title,styles['DocTitleASL']),Paragraph(summary,styles['DocBodyASL']),Spacer(1,5)]
  for head,items in sections:
   story.append(Paragraph(head,styles['DocHeadASL']))
   for item in items: story.append(Paragraph('• '+item,styles['DocBodyASL']))

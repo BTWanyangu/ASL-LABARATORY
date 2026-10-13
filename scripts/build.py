@@ -29,24 +29,24 @@ def write_page(route,title,description,body,img='home-hero',noindex=False):
  return path
 ROUTES=[]
 def add(*args,**kw):ROUTES.append(write_page(*args,**kw))
-add('','Aurum Standard Laboratories | Minerals, Gold, Diamonds & Gemstones','Explore analytical services, assaying, refining, transportation, storage and mineral buying and trading.',pages.home())
-add('about','About Aurum Standard Laboratories | ASL','Understand the identity, focus and guiding principles of Aurum Standard Laboratories.',pages.about(),'about')
-add('services','Material Assay & Examination Services | ASL','Explore sixteen services covering analytical testing enquiries, assay, refining, manufacturing, transport, storage and mineral trading.',pages.services_index(),'mineral-assay')
-add('trade','Mineral Buying & Trading | Aurum Standard Laboratories','Discover information about mineral buying, mineral trade, responsible sourcing and how to begin a commercial enquiry.',pages.trade_index(),'mineral-assay')
+add('','Aurum Standard Analytical Laboratories | Minerals, Gold, Diamonds & Gemstones','Explore analytical services, assaying, refining, transportation, storage and mineral buying and trading.',pages.home())
+add('about','About Aurum Standard Analytical Laboratories | ASL','Understand the identity, focus and guiding principles of Aurum Standard Analytical Laboratories.',pages.about(),'about')
+add('services','Material Assay & Examination Services | Aurum Standard Analytical Laboratories','Explore sixteen services covering analytical testing enquiries, assay, refining, manufacturing, transport, storage and mineral trading.',pages.services_index(),'mineral-assay')
+add('trade','Mineral Buying & Trading | Aurum Standard Analytical Laboratories','Discover information about mineral buying, mineral trade, responsible sourcing and how to begin a commercial enquiry.',pages.trade_index(),'mineral-assay')
 for s in SERVICES:
- desc=f"Explore {s['title'].lower()} questions, material preparation, reporting considerations and useful next steps at Aurum Standard Laboratories."
- add('services/'+s['slug'],s['title']+' | Aurum Standard Laboratories',desc,pages.service_detail(s),s['image'])
-add('process','Our Laboratory Enquiry Process | ASL','Understand the stages from a material enquiry and sample identification to relevant examination, review and reporting.',pages.process(),'lab-detail')
-add('quality','Quality & Responsibility | Aurum Standard Laboratories','Explore the principles of specimen identity, method suitability, traceability, interpretation and confidentiality.',pages.quality(),'quality')
-add('knowledge','Knowledge & Insights | Aurum Standard Laboratories','Read educational articles about assays, representative sampling, diamond and gemstone examination, and laboratory reports.',pages.knowledge_index(),'stone-detail')
+ desc=f"Explore {s['title'].lower()} questions, material preparation, reporting considerations and useful next steps at Aurum Standard Analytical Laboratories."
+ add('services/'+s['slug'],s['title']+' | Aurum Standard Analytical Laboratories',desc,pages.service_detail(s),s['image'])
+add('process','Our Laboratory Enquiry Process | Aurum Standard Analytical Laboratories','Understand the stages from a material enquiry and sample identification to relevant examination, review and reporting.',pages.process(),'lab-detail')
+add('quality','Quality & Responsibility | Aurum Standard Analytical Laboratories','Explore the principles of specimen identity, method suitability, traceability, interpretation and confidentiality.',pages.quality(),'quality')
+add('knowledge','Knowledge & Insights | Aurum Standard Analytical Laboratories','Read educational articles about assays, representative sampling, diamond and gemstone examination, and laboratory reports.',pages.knowledge_index(),'stone-detail')
 for a in ARTICLES:
- add('knowledge/'+a['slug'],a['title']+' | ASL Insights',a['excerpt'],pages.article_detail(a),a['image'])
-add('resources','Sample Guidance & Downloadable Resources | ASL','Download real educational PDF guides on specimen preparation, material enquiries and understanding laboratory results.',pages.resources(),'reporting')
-add('contact','Contact & Enquiries | Aurum Standard Laboratories','Prepare an enquiry about analytical services, assay, precious materials, buying, trading, refining or custody at ASL.',pages.contact(),'contact')
-add('privacy','Privacy Notice | Aurum Standard Laboratories','How the ASL website handles enquiry-drafting information and site privacy.',pages.privacy(),'home-hero')
-add('terms','Website Terms | Aurum Standard Laboratories','Terms for the informational ASL website and downloadable reference resources.',pages.terms(),'home-hero')
+ add('knowledge/'+a['slug'],a['title']+' | Aurum Standard Analytical Laboratories',a['excerpt'],pages.article_detail(a),a['image'])
+add('resources','Sample Guidance & Downloadable Resources | Aurum Standard Analytical Laboratories','Download real educational PDF guides on specimen preparation, material enquiries and understanding laboratory results.',pages.resources(),'reporting')
+add('contact','Contact & Enquiries | Aurum Standard Analytical Laboratories','Prepare an enquiry about analytical services, assay, precious materials, buying, trading, refining or custody at ASL.',pages.contact(),'contact')
+add('privacy','Privacy Notice | Aurum Standard Analytical Laboratories','How the ASL website handles enquiry-drafting information and site privacy.',pages.privacy(),'home-hero')
+add('terms','Website Terms | Aurum Standard Analytical Laboratories','Terms for the informational ASL website and downloadable reference resources.',pages.terms(),'home-hero')
 # Dedicated 404 document with the right metadata, not a modified copy of home.
-write_page('404','Page not found | Aurum Standard Laboratories','The page you requested could not be found. Return to ASL services or the homepage.',pages.not_found(),noindex=True)
+write_page('404','Page not found | Aurum Standard Analytical Laboratories','The page you requested could not be found. Return to ASL services or the homepage.',pages.not_found(),noindex=True)
 shutil.copyfile(DEST/'404/index.html',DEST/'404.html')
 (DEST/'robots.txt').write_text('User-agent: *\nAllow: /\n'+('Sitemap: '+BASE+'/sitemap.xml\n' if BASE else ''),encoding='utf-8')
 if BASE:
