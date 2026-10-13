@@ -187,5 +187,20 @@
       1087,
       900
     ]
+  },
+  {
+    "path": "/images/generated/analytical-as-a-service.webp",
+    "alt": "Conceptual photograph of gloved hands arranging material on an analytical balance in a laboratory",
+    "origin": "Original AI-generated conceptual editorial crop from previously generated ASL laboratory image",
+    "sourceOriginal": "a_realistic_high_resolution_close_up_laboratory_s.png",
+    "usage": [
+      "Analytical as a Service page",
+      "Home analytical services spotlight",
+      "Services index"
+    ],
+    "dimensions": [
+      1321,
+      830
+    ]
   }
 ]

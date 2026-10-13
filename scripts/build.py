@@ -29,9 +29,9 @@ def write_page(route,title,description,body,img='home-hero',noindex=False):
  return path
 ROUTES=[]
 def add(*args,**kw):ROUTES.append(write_page(*args,**kw))
-add('','Aurum Standard Laboratories | Minerals, Gold, Diamonds & Gemstones','Explore assaying and examination, refining, manufacturing, transportation, storage, mineral buying and trading.',pages.home())
+add('','Aurum Standard Laboratories | Minerals, Gold, Diamonds & Gemstones','Explore analytical services, assaying, refining, transportation, storage and mineral buying and trading.',pages.home())
 add('about','About Aurum Standard Laboratories | ASL','Understand the identity, focus and guiding principles of Aurum Standard Laboratories.',pages.about(),'about')
-add('services','Material Assay & Examination Services | ASL','Explore fifteen service areas including assay, refining, manufacturing, transport, storage, mineral buying and trading.',pages.services_index(),'mineral-assay')
+add('services','Material Assay & Examination Services | ASL','Explore sixteen services covering analytical testing enquiries, assay, refining, manufacturing, transport, storage and mineral trading.',pages.services_index(),'mineral-assay')
 add('trade','Mineral Buying & Trading | Aurum Standard Laboratories','Discover information about mineral buying, mineral trade, responsible sourcing and how to begin a commercial enquiry.',pages.trade_index(),'mineral-assay')
 for s in SERVICES:
  desc=f"Explore {s['title'].lower()} questions, material preparation, reporting considerations and useful next steps at Aurum Standard Laboratories."
@@ -42,7 +42,7 @@ add('knowledge','Knowledge & Insights | Aurum Standard Laboratories','Read educa
 for a in ARTICLES:
  add('knowledge/'+a['slug'],a['title']+' | ASL Insights',a['excerpt'],pages.article_detail(a),a['image'])
 add('resources','Sample Guidance & Downloadable Resources | ASL','Download real educational PDF guides on specimen preparation, material enquiries and understanding laboratory results.',pages.resources(),'reporting')
-add('contact','Contact & Enquiries | Aurum Standard Laboratories','Prepare an enquiry about assaying, precious materials, mineral buying, trading, refining or custody at ASL.',pages.contact(),'contact')
+add('contact','Contact & Enquiries | Aurum Standard Laboratories','Prepare an enquiry about analytical services, assay, precious materials, buying, trading, refining or custody at ASL.',pages.contact(),'contact')
 add('privacy','Privacy Notice | Aurum Standard Laboratories','How the ASL website handles enquiry-drafting information and site privacy.',pages.privacy(),'home-hero')
 add('terms','Website Terms | Aurum Standard Laboratories','Terms for the informational ASL website and downloadable reference resources.',pages.terms(),'home-hero')
 # Dedicated 404 document with the right metadata, not a modified copy of home.

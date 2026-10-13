@@ -19,6 +19,7 @@
     "/services/storage/",
     "/services/mineral-buying/",
     "/services/mineral-trading/",
+    "/services/analytical-as-a-service/",
     "/process/",
     "/quality/",
     "/knowledge/",
@@ -31,6 +32,6 @@
     "/privacy/",
     "/terms/"
   ],
-  "generatedAt": "2026-10-12T09:52:19.656240+00:00",
+  "generatedAt": "2026-10-13T04:00:29.103783+00:00",
   "baseUrl": null
 }

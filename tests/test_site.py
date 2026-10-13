@@ -11,7 +11,7 @@ class SiteAudit(unittest.TestCase):
   cls.routes=json.loads((DIST/'route-manifest.json').read_text())['routes']
   cls.html=[(r,BeautifulSoup((DIST/r.strip('/')/'index.html' if r.strip('/') else DIST/'index.html').read_text(),'html.parser')) for r in cls.routes]
  def test_service_routes_and_not_found(self):
-  self.assertEqual(len(self.routes),30)
+  self.assertEqual(len(self.routes),31)
   self.assertIn("/trade/",self.routes)
   for service in SERVICES:
    self.assertIn("/services/"+service["slug"]+"/",self.routes)
@@ -43,10 +43,10 @@ class SiteAudit(unittest.TestCase):
     self.assertTrue(im.has_attr('alt'),f'Image missing alt in {route}')
  def test_service_categories_and_trade_links(self):
   expected={"Transportation":"transportation","Reception":"reception","Assaying":"assaying","Refining":"refining","Manufacturing":"manufacturing","Financing":"financing","Storage":"storage"}
-  self.assertEqual(len(SERVICES),15)
+  self.assertEqual(len(SERVICES),16)
   self.assertEqual(VALCAMBI_SERVICE_NAMES,list(expected))
   self.assertTrue(all(any(s["slug"]==slug for s in SERVICES) for slug in expected.values()))
-  self.assertEqual(sum(len(items) for _,items in SERVICE_GROUPS),15)
+  self.assertEqual(sum(len(items) for _,items in SERVICE_GROUPS),16)
   home=dict(self.html)['/'];services=dict(self.html)['/services/'];trade=dict(self.html)['/trade/']
   for slug in ['mineral-buying','mineral-trading']:
    self.assertTrue(services.select_one(f'a[href="/services/{slug}/"]'))
@@ -79,7 +79,7 @@ class SiteAudit(unittest.TestCase):
     self.assertNotIn(term,text,route)
  def test_assets_manifest_matches_actual(self):
   manifest=json.loads((ROOT/'IMAGE_MANIFEST.json').read_text())
-  self.assertEqual(len(manifest),14)
+  self.assertEqual(len(manifest),15)
   for entry in manifest:
    self.assertTrue((DIST/entry['path'].lstrip('/')).exists())
 if __name__=='__main__':unittest.main()

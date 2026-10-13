@@ -6,7 +6,7 @@ from browser_smoke import page_markup, DIST, ROOT
 with sync_playwright() as pw:
  b=pw.chromium.launch(headless=True,executable_path='/usr/bin/chromium',args=['--no-sandbox'])
  out=ROOT/'tests/screenshots';out.mkdir(exist_ok=True)
- for route in ['/services/','/trade/','/services/refining/','/services/mineral-buying/','/services/mineral-trading/']:
+ for route in ['/services/','/trade/','/services/refining/','/services/mineral-buying/','/services/mineral-trading/','/services/analytical-as-a-service/']:
   for width in [320,375,768,1024,1440]:
    p=b.new_page(viewport={'width':width,'height':900})
    errors=[];p.on('pageerror',lambda err:errors.append(str(err)))
@@ -32,8 +32,8 @@ with sync_playwright() as pw:
     assert p.locator('.mobile-navigation').is_hidden()
    if width==1440 and route=='/services/':
     p.locator('.menu-trigger').click()
-    assert p.locator('.dropdown-group').count()==5
-    assert p.locator('.dropdown-links a').count()==15
+    assert p.locator('.dropdown-group').count()==6
+    assert p.locator('.dropdown-links a').count()==16
     p.keyboard.press('Escape')
    p.close()
   print(route,'PASS 5 viewports, layout and nav checks')
